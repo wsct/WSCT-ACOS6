@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WSCT.GUI.ACOS6Launcher", "WSCT.GUI.ACOS6Launcher\WSCT.GUI.ACOS6Launcher.csproj", "{81ED588E-1FA0-4A55-BD7B-25A4552FB669}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Layer ACOS6", "Layer ACOS6\Layer ACOS6.csproj", "{0A106477-A216-4E4C-9CBF-2D5BC6C4D16F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin ACOS6", "Plugin ACOS6\Plugin ACOS6.csproj", "{1A398E9B-DBF9-41C1-B1BD-936BF4521875}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Layer ACOS6 Unit Tests", "Layer ACOS6 Unit Tests\Layer ACOS6 Unit Tests.csproj", "{88B0C7C6-C24D-4024-B152-DF92A42F8D37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81ED588E-1FA0-4A55-BD7B-25A4552FB669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81ED588E-1FA0-4A55-BD7B-25A4552FB669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81ED588E-1FA0-4A55-BD7B-25A4552FB669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81ED588E-1FA0-4A55-BD7B-25A4552FB669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A106477-A216-4E4C-9CBF-2D5BC6C4D16F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A106477-A216-4E4C-9CBF-2D5BC6C4D16F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A106477-A216-4E4C-9CBF-2D5BC6C4D16F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A106477-A216-4E4C-9CBF-2D5BC6C4D16F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A398E9B-DBF9-41C1-B1BD-936BF4521875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A398E9B-DBF9-41C1-B1BD-936BF4521875}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A398E9B-DBF9-41C1-B1BD-936BF4521875}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A398E9B-DBF9-41C1-B1BD-936BF4521875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88B0C7C6-C24D-4024-B152-DF92A42F8D37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88B0C7C6-C24D-4024-B152-DF92A42F8D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88B0C7C6-C24D-4024-B152-DF92A42F8D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88B0C7C6-C24D-4024-B152-DF92A42F8D37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC9785A8-4EDD-4327-B6BE-C2F25D571B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC9785A8-4EDD-4327-B6BE-C2F25D571B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC9785A8-4EDD-4327-B6BE-C2F25D571B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC9785A8-4EDD-4327-B6BE-C2F25D571B20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{701FA45F-6EDF-48EF-A905-CBF9DF9F87D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{701FA45F-6EDF-48EF-A905-CBF9DF9F87D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{701FA45F-6EDF-48EF-A905-CBF9DF9F87D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{701FA45F-6EDF-48EF-A905-CBF9DF9F87D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D69F1B3-EAF6-4F43-84E7-7A8071E29D72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D69F1B3-EAF6-4F43-84E7-7A8071E29D72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D69F1B3-EAF6-4F43-84E7-7A8071E29D72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D69F1B3-EAF6-4F43-84E7-7A8071E29D72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EC7CEC2-65E4-48E8-AFA9-E43C91D0012D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC7CEC2-65E4-48E8-AFA9-E43C91D0012D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC7CEC2-65E4-48E8-AFA9-E43C91D0012D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC7CEC2-65E4-48E8-AFA9-E43C91D0012D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DC9785A8-4EDD-4327-B6BE-C2F25D571B20} = {3298CDB0-13EC-4CC2-A9C5-66F34F258F3F}
+		{701FA45F-6EDF-48EF-A905-CBF9DF9F87D4} = {3298CDB0-13EC-4CC2-A9C5-66F34F258F3F}
+		{2D69F1B3-EAF6-4F43-84E7-7A8071E29D72} = {3298CDB0-13EC-4CC2-A9C5-66F34F258F3F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A47B98E8-A85B-44C6-A46A-44C893069C00}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Console Tests\Console Tests.csproj
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Console Tests\Console Tests.csproj
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Console Tests\Console Tests.csproj
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = WSCT.GUI.Launcher\WSCT.GUI.Launcher.csproj
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = WSCT.Core.ConsoleTests\WSCT.Core.ConsoleTests.csproj
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = WSCT.Core.ConsoleTests\WSCT.Core.ConsoleTests.csproj
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = WSCT.Core.ConsoleTests\WSCT.Core.ConsoleTests.csproj
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+
+*.pdb
+bin
+obj
+*.suo
+*.pidb
+*.userprefs
+/packages
+/.vs
+.nuget/
+*.sln.DotSettings.user

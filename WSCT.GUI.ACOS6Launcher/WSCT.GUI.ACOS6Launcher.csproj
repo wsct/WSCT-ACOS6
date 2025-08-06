@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFrameworks>net462;net6.0-windows;net9.0-windows</TargetFrameworks>
+    <PackageId>WSCT.GUI.ACOS6Launcher</PackageId>
+    <Authors>Sylvain Vernois</Authors>
+    <Company>ENSICAEN</Company>
+    <Product>WSCT</Product>
+    <Copyright>Copyright © Sylvain Vernois / ENSICAEN 2025</Copyright>
+    <AssemblyName>WSCT.GUI.ACOS6Launcher</AssemblyName>
+    <RootNamespace>WSCT.GUI.ACOS6Launcher</RootNamespace>
+    <Description>Launcher of WSCT GUI configured with ACOS6 plugins.</Description>
+    <ApplicationIcon></ApplicationIcon>
+    <Version>1.0.0</Version>
+    <Win32Resource />
+    <OutputType>WinExe</OutputType>
+    <StartupObject />
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="WSCT.GUI" Version="6.2.1" />
+    <PackageReference Include="WSCT.GUI.Plugins.LayerInteractive" Version="3.2.1" />
+    <PackageReference Include="WSCT.Plugin.ISO7816Tools" Version="5.2.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Plugin ACOS6\Plugin ACOS6.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Stack.Channel.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Stack.Context.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

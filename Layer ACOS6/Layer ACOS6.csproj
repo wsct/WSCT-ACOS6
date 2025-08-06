@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net6.0;net9.0</TargetFrameworks>
+    <PackageId>WSCT.Layers.ACOS6</PackageId>
+    <Authors>Sylvain Vernois</Authors>
+    <Company>ENSICAEN</Company>
+    <Product>WSCT</Product>
+    <Copyright>Copyright © Sylvain Vernois / ENSICAEN 2025</Copyright>
+    <AssemblyName>Layers.ACOS6</AssemblyName>
+    <RootNamespace>WSCT.Layers.ACOS6</RootNamespace>
+    <Description>Layer ACOS6 for WSCT.</Description>
+    <Version>2.1.0</Version>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="WSCT.Core" Version="6.7.0" />
+  </ItemGroup>
+</Project>

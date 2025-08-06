@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ChannelStack>
+
+  <layer name="CC4 Select">
+    <dll>Layers.ACOS6.dll</dll>
+    <className>WSCT.Layers.ACOS6.CC4Select.CardChannelLayer</className>
+    <pathToDll></pathToDll>
+  </layer>
+
+  <layer name="Interactive Channel">
+    <dll>Layer.Interactive.dll</dll>
+    <className>WSCT.Layers.Interactive.CardChannelLayer</className>
+    <pathToDll></pathToDll>
+  </layer>
+
+  <layer name="WinSCard Core Channel">
+    <dll>WSCT.Wrapper.Desktop.dll</dll>
+    <className>WSCT.Wrapper.Desktop.Stack.CardChannelLayer</className>
+    <pathToDll></pathToDll>
+  </layer>
+
+</ChannelStack>
