@@ -22,6 +22,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Layer ACOS6\Layer ACOS6.csproj" />
+    <ProjectReference Include="..\WSCT.ACOS6\WSCT.ACOS6.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Gui.cs" SubType="Form" />

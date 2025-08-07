@@ -103,7 +103,7 @@ namespace WSCT.ACOS6.Security.TripleDes
 
             var r2 = Array.Empty<byte>();
             // EXTERNAL AUTHENTICATE (R1, RNDT)
-            new CommandAPDU(0x00, 0x82, 0x82, 0x81, 0x10, r1.Concat(terminalRandom).ToArray())
+            new CommandAPDU(0x00, 0x82, 0x82, 0x81, 0x10, [.. r1, .. terminalRandom])
                 .Transmit(cardChannel)
                 .ThrowIfNotSuccess()
                 .ChainIf(r => r.Sw1 == 0x61, r => new CommandAPDU(0x00, 0xC0, 0x00, 0x00, r.Sw2), cardChannel)
