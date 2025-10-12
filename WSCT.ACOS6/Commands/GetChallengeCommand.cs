@@ -11,7 +11,7 @@ namespace WSCT.ACOS6.Commands
         /// <summary>
         /// Creates a GETCHALLENGE command.
         /// </summary> 
-        /// <param ref="size">Only 0x04 and 0x08 are valid vlaues for ACOS6 smartcards.</param>
+        /// <param ref="size">Only 0x04 and 0x08 are valid values for ACOS6 smartcards.</param>
         public GetChallengeCommand(byte size = 8) : base(0x00, 0x84, 0x00, 0x00, size)
         {
         }
