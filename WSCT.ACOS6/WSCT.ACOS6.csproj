@@ -5,7 +5,32 @@
 	  <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 	<LangVersion>latest</LangVersion>
+	<Description>A library for using WSCT with ACOS6 smartcards.</Description>
+	<Copyright>MIT</Copyright>
+	<PackageProjectUrl>https://github.com/wsct/WSCT-ACOS6</PackageProjectUrl>
+	<RepositoryType>git</RepositoryType>
+	<RepositoryUrl>https://github.com/wsct/WSCT-ACOS6</RepositoryUrl>
+	<PackageTags>WSCT; </PackageTags>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<PackageReleaseNotes>Defines some commands for working with ACOS6 smartcards.
+It is intended for use at ENSICAEN, for educational purposes (e-payment and security).</PackageReleaseNotes>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<Title>WSCT helper library for the ACOS6 smart card.</Title>
+	<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+	<EnableNETAnalyzers>False</EnableNETAnalyzers>
+	<AnalysisLevel>latest</AnalysisLevel>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="WSCT.Core" Version="6.7.0" />

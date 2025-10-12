@@ -11,7 +11,7 @@
     <Description>Layer ACOS6 for WSCT.</Description>
     <Version>2.1.0</Version>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 	<LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
