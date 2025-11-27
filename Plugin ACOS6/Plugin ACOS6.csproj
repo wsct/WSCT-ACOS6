@@ -16,6 +16,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <LangVersion>latest</LangVersion>
+    <PackageOutputPath>../nuget/$(Configuration)</PackageOutputPath>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="WSCT.GUI.Plugins.LayerInteractive" Version="3.2.1" />

@@ -13,8 +13,9 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 	<LangVersion>latest</LangVersion>
+	<PackageOutputPath>../nuget/$(Configuration)</PackageOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="WSCT.Core" Version="6.7.0" />
+    <PackageReference Include="WSCT.Core" Version="6.7.1" />
   </ItemGroup>
 </Project>

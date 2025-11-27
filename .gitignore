@@ -9,3 +9,4 @@ obj
 /.vs
 .nuget/
 *.sln.DotSettings.user
+/nuget
