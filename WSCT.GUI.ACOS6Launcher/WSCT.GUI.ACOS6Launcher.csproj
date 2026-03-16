@@ -1,6 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <TargetFrameworks>net462;net6.0-windows;net9.0-windows</TargetFrameworks>
     <PackageId>WSCT.GUI.ACOS6Launcher</PackageId>
     <Authors>Sylvain Vernois</Authors>
     <Company>ENSICAEN</Company>
@@ -18,9 +17,9 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="WSCT.GUI" Version="6.2.1" />
-    <PackageReference Include="WSCT.GUI.Plugins.LayerInteractive" Version="3.2.1" />
-    <PackageReference Include="WSCT.Plugin.ISO7816Tools" Version="5.2.1" />
+    <PackageReference Include="WSCT.GUI" />
+    <PackageReference Include="WSCT.GUI.Plugins.LayerInteractive" />
+    <PackageReference Include="WSCT.Plugin.ISO7816Tools" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Plugin ACOS6\Plugin ACOS6.csproj" />

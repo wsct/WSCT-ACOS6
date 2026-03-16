@@ -1,0 +1,20 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageTransitivePinningEnabled>false</CentralPackageTransitivePinningEnabled>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageVersion Include="WSCT.Core" Version="6.7.1" />
+    <PackageVersion Include="WSCT.GUI" Version="6.2.1" />
+    <PackageVersion Include="WSCT.GUI.Plugins.LayerInteractive" Version="3.2.1" />
+    <PackageVersion Include="WSCT.Plugin.ISO7816Tools" Version="5.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+  	<PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
+	  <PackageVersion Include="Moq" Version="4.20.72" />
+	  <PackageVersion Include="NUnit" Version="4.4.0" />
+	  <PackageVersion Include="NUnit3TestAdapter" Version="5.2.0" />
+  </ItemGroup>
+</Project>

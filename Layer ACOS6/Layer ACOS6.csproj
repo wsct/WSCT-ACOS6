@@ -1,6 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net6.0;net9.0</TargetFrameworks>
     <PackageId>WSCT.Layers.ACOS6</PackageId>
     <Authors>Sylvain Vernois</Authors>
     <Company>ENSICAEN</Company>
@@ -10,12 +9,9 @@
     <RootNamespace>WSCT.Layers.ACOS6</RootNamespace>
     <Description>Layer ACOS6 for WSCT.</Description>
     <Version>2.1.0</Version>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
-	<LangVersion>latest</LangVersion>
-	<PackageOutputPath>../nuget/$(Configuration)</PackageOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="WSCT.Core" Version="6.7.1" />
+    <PackageReference Include="WSCT.Core" />
   </ItemGroup>
 </Project>
