@@ -1,40 +1,45 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-  <PropertyGroup>
-    <Version>1.0.0.0</Version>
-    <Product>WSCT</Product>
-    <Company>ENSICAEN</Company>
-    <Authors>Sylvain Vernois</Authors>
-    <PackageId>WSCT.GUI.Plugins.ACOS6</PackageId>
-    <RepositoryUrl></RepositoryUrl>
-    <PackageProjectUrl>https://github.com/wsct/WSCT-GUI</PackageProjectUrl>
-    <Description>Plugin ACOS6 for WSCT GUI.</Description>
-    <OutputType>Library</OutputType>
-    <AssemblyName>Plugins.ACOS6</AssemblyName>
-    <RootNamespace>WSCT.GUI.Plugins.ACOS6</RootNamespace>
-    <UseWindowsForms>true</UseWindowsForms>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="WSCT.GUI.Plugins.LayerInteractive" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Layer ACOS6\Layer ACOS6.csproj" />
-    <ProjectReference Include="..\WSCT.ACOS6\WSCT.ACOS6.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Update="Gui.cs" SubType="Form" />
-    <Compile Update="Gui.Designer.cs" SubType="Form" DependentUpon="Gui.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Update="Resources\Lang.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Lang.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Update="Resources\Lang.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Lang.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<Version>1.0.0</Version>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<UseWindowsForms>true</UseWindowsForms>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<AssemblyName>Plugin.ACOS6</AssemblyName>
+		<RootNamespace>WSCT.GUI.Plugins.ACOS6</RootNamespace>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageId>WSCT.GUI.Plugins.ACOS6</PackageId>
+		<Description>Plugin ACOS6 for WSCT GUI.</Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="WSCT.GUI.Plugins.LayerInteractive" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Layer ACOS6\Layer ACOS6.csproj" />
+		<ProjectReference Include="..\WSCT.ACOS6\WSCT.ACOS6.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Update="Gui.cs" SubType="Form" />
+		<Compile Update="Gui.Designer.cs" SubType="Form" DependentUpon="Gui.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Update="Resources\Lang.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Lang.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Update="Resources\Lang.resx">
+			<Generator>PublicResXFileCodeGenerator</Generator>
+			<LastGenOutput>Lang.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
 </Project>

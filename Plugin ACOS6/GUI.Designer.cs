@@ -32,6 +32,7 @@
             System.Windows.Forms.TextBox CC4ManagerLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gui));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ShortKeyAuthenticationValue = new System.Windows.Forms.TextBox();
             this.ComputeShortKeyResultButton = new System.Windows.Forms.Button();
             this.CardChallengeValue = new System.Windows.Forms.TextBox();
             this.CardKeyValue = new System.Windows.Forms.TextBox();
@@ -40,7 +41,6 @@
             this.CardKeyLabel = new System.Windows.Forms.Label();
             this.ConfigurationZone = new System.Windows.Forms.GroupBox();
             this.CC4Manager = new System.Windows.Forms.CheckBox();
-            this.ShortKeyAuthenticationValue = new System.Windows.Forms.TextBox();
             toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             CC4ManagerLabel = new System.Windows.Forms.TextBox();
             toolStripContainer1.ContentPanel.SuspendLayout();
@@ -88,6 +88,15 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Short Key Authentication";
+            // 
+            // ShortKeyAuthenticationValue
+            // 
+            this.ShortKeyAuthenticationValue.Font = new System.Drawing.Font("Fira Code", 7.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShortKeyAuthenticationValue.Location = new System.Drawing.Point(204, 123);
+            this.ShortKeyAuthenticationValue.Name = "ShortKeyAuthenticationValue";
+            this.ShortKeyAuthenticationValue.ReadOnly = true;
+            this.ShortKeyAuthenticationValue.Size = new System.Drawing.Size(240, 27);
+            this.ShortKeyAuthenticationValue.TabIndex = 6;
             // 
             // ComputeShortKeyResultButton
             // 
@@ -173,7 +182,7 @@
             CC4ManagerLabel.Name = "CC4ManagerLabel";
             CC4ManagerLabel.Size = new System.Drawing.Size(530, 23);
             CC4ManagerLabel.TabIndex = 1;
-            CC4ManagerLabel.Text = "▷ allows to execute SELECT command as a CC4.";
+            CC4ManagerLabel.Text = "▷ allows execution of the SELECT command as a CC4.";
             // 
             // CC4Manager
             // 
@@ -187,15 +196,6 @@
             this.CC4Manager.Text = "CC4 Manager";
             this.CC4Manager.UseVisualStyleBackColor = true;
             this.CC4Manager.CheckedChanged += new System.EventHandler(this.CC4Manager_CheckedChanged);
-            // 
-            // ShortKeyAuthenticationValue
-            // 
-            this.ShortKeyAuthenticationValue.Font = new System.Drawing.Font("Fira Code", 7.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShortKeyAuthenticationValue.Location = new System.Drawing.Point(204, 123);
-            this.ShortKeyAuthenticationValue.Name = "ShortKeyAuthenticationValue";
-            this.ShortKeyAuthenticationValue.ReadOnly = true;
-            this.ShortKeyAuthenticationValue.Size = new System.Drawing.Size(240, 27);
-            this.ShortKeyAuthenticationValue.TabIndex = 6;
             // 
             // Gui
             // 
