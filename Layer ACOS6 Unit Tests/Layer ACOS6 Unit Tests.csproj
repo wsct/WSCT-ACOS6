@@ -1,29 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <Version>1.0.0.0</Version>
-    <Copyright>Copyright © ENSICAEN 2025</Copyright>
-    <Product>WSCT</Product>
-    <Company>ENSICAEN</Company>
-    <Authors>Sylvain Vernois</Authors>
-    <PackageId>WSCT.Layers.ACOS6.UnitTests</PackageId>
-    <RepositoryUrl>https://github.com/wsct/WSCT-FakeTB100</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/wsct/WSCT-FakeTB100</PackageProjectUrl>
-    <Description>Unit tests for WSCT.Layers.ACOS6 library.</Description>
-    <ApplicationIcon />
-    <StartupObject />
-    <OutputType>Library</OutputType>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" />
-    <PackageReference Include="Moq" />
-    <PackageReference Include="NUnit" />
-    <PackageReference Include="NUnit3TestAdapter">
-	    <PrivateAssets>all</PrivateAssets>
-	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-	  </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Layer ACOS6\Layer ACOS6.csproj" />
-  </ItemGroup>
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<Version>1.0.0.0</Version>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageId>WSCT.Layers.ACOS6.UnitTests</PackageId>
+		<Description>Unit tests for WSCT.Layers.ACOS6 library.</Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" />
+		<PackageReference Include="Moq" />
+		<PackageReference Include="NUnit" />
+		<PackageReference Include="NUnit3TestAdapter">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Layer ACOS6\Layer ACOS6.csproj" />
+	</ItemGroup>
 </Project>

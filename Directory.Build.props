@@ -3,24 +3,23 @@
     <PropertyGroup>
         <Company>ENSICAEN</Company>
         <Authors>Sylvain Vernois</Authors>
-        <Copyright>Copyright © Sylvain Vernois / ENSICAEN 2006-$([System.DateTime]::Now.Year)</Copyright>
+        <Copyright>Copyright © Sylvain Vernois / ENSICAEN 2025-$([System.DateTime]::Now.Year)</Copyright>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <RepositoryUrl>https://github.com/wsct/WSCT-GUI-Blazor</RepositoryUrl>
+        <RepositoryUrl>https://github.com/wsct/WSCT-ACOS6</RepositoryUrl>
     </PropertyGroup>
 
     <PropertyGroup>
         <Deterministic>true</Deterministic>
-        <TargetFrameworks>net6.0;net9.0</TargetFrameworks>
+        <TargetFrameworks>net10.0</TargetFrameworks>
         <LangVersion>latest</LangVersion>
-        <RazorLangVersion>latest</RazorLangVersion>
     </PropertyGroup>
 
 	<PropertyGroup Condition="'$(MSBuildProjectName)' == 'WSCT.GUI.ACOS6Launcher'">
-    	<TargetFrameworks>net6.0-windows;net9.0-windows</TargetFrameworks>
+    	<TargetFrameworks>net10.0-windows</TargetFrameworks>
   	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(MSBuildProjectName)' == 'Plugin ACOS6'">
-	    <TargetFrameworks>net6.0-windows;net9.0-windows</TargetFrameworks>
+	    <TargetFrameworks>net10.0-windows</TargetFrameworks>
   	</PropertyGroup>
 
     <PropertyGroup>

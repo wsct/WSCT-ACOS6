@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="LICENSE.md" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="Layer ACOS6 Unit Tests/Layer ACOS6 Unit Tests.csproj" />
+  <Project Path="Layer ACOS6/Layer ACOS6.csproj" />
+  <Project Path="Plugin ACOS6/Plugin ACOS6.csproj" />
+  <Project Path="WSCT.ACOS6.CommandLine/WSCT.ACOS6.CommandLine.csproj" />
+  <Project Path="WSCT.ACOS6/WSCT.ACOS6.csproj" />
+  <Project Path="WSCT.GUI.ACOS6Launcher/WSCT.GUI.ACOS6Launcher.csproj" />
+  <Properties Name="MonoDevelopProperties">
+    <Property Name="StartupItem" Value="WSCT.Core.ConsoleTests\WSCT.Core.ConsoleTests.csproj" />
+  </Properties>
+</Solution>
