@@ -7,6 +7,7 @@
   <Project Path="Layer ACOS6/Layer ACOS6.csproj" />
   <Project Path="Plugin ACOS6/Plugin ACOS6.csproj" />
   <Project Path="WSCT.ACOS6.CommandLine/WSCT.ACOS6.CommandLine.csproj" />
+  <Project Path="WSCT.ACOS6.UnitTests/WSCT.ACOS6.UnitTests.csproj" Id="e3fa3669-f378-413a-b21f-97a2ba95995c" />
   <Project Path="WSCT.ACOS6/WSCT.ACOS6.csproj" />
   <Project Path="WSCT.GUI.ACOS6Launcher/WSCT.GUI.ACOS6Launcher.csproj" />
   <Properties Name="MonoDevelopProperties">
