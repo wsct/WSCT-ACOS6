@@ -14,14 +14,6 @@
         <LangVersion>latest</LangVersion>
     </PropertyGroup>
 
-	<PropertyGroup Condition="'$(MSBuildProjectName)' == 'WSCT.GUI.ACOS6Launcher'">
-    	<TargetFrameworks>net10.0-windows</TargetFrameworks>
-  	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(MSBuildProjectName)' == 'Plugin ACOS6'">
-	    <TargetFrameworks>net10.0-windows</TargetFrameworks>
-  	</PropertyGroup>
-
     <PropertyGroup>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>

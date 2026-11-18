@@ -1,0 +1,81 @@
+@using WSCT.ACOS6.Security.TripleDes
+@using WSCT.Helpers
+@using WSCT.Layers.ACOS6
+@implements IDisposable
+
+<div class="card shadow-sm mb-4">
+    <div class="card-header bg-primary text-white py-2">
+        <i class="bi bi-credit-card-2-front me-2"></i>
+        <span class="fw-bold">ACOS6 Smartcards for ENSICAEN</span>
+    </div>
+    <div class="card-body">
+        <!-- Stack Configuration -->
+        <div class="card border-light bg-light mb-3">
+            <div class="card-header bg-white fw-bold small">Stack Configuration</div>
+            <div class="card-body">
+                <div class="form-check form-switch mb-2">
+                    <input class="form-check-input" type="checkbox" id="cc4ManagerSwitch"
+                           checked="@ACOS6Controller.UseCC4Manager"
+                           @onchange="OnCC4ManagerChanged" />
+                    <label class="form-check-label fw-bold small" for="cc4ManagerSwitch">CC4 Manager</label>
+                </div>
+                <div class="text-muted small">
+                    ▷ allows execution of the SELECT command as a CC4.
+                </div>
+            </div>
+        </div>
+
+        <!-- Short Key Authentication -->
+        <div class="card border-light bg-light">
+            <div class="card-header bg-white fw-bold small">Short Key Authentication</div>
+            <div class="card-body">
+                <div class="row g-2 align-items-center mb-2">
+                    <div class="col-sm-3">
+                        <label class="col-form-label col-form-label-sm fw-bold" for="cardKeyInput">Card Key (3DES):</label>
+                    </div>
+                    <div class="col-sm-9">
+                        <input id="cardKeyInput" type="text"
+                               class="form-control form-control-sm font-monospace @(IsValidCardKey ? "" : "is-invalid")"
+                               @bind="_cardKeyText" @bind:event="oninput" />
+                        @if (!IsValidCardKey)
+                        {
+                            <div class="invalid-feedback">Expected a 16-byte hexadecimal key.</div>
+                        }
+                    </div>
+                </div>
+
+                <div class="row g-2 align-items-center mb-3">
+                    <div class="col-sm-3">
+                        <label class="col-form-label col-form-label-sm fw-bold" for="cardChallengeInput">Card Random Number:</label>
+                    </div>
+                    <div class="col-sm-9">
+                        <input id="cardChallengeInput" type="text"
+                               class="form-control form-control-sm font-monospace @(IsValidCardChallenge ? "" : "is-invalid")"
+                               @bind="_cardChallengeText" @bind:event="oninput" />
+                        @if (!IsValidCardChallenge)
+                        {
+                            <div class="invalid-feedback">Expected a 4-byte hexadecimal random number.</div>
+                        }
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <button class="btn btn-primary btn-sm" @onclick="ComputeShortKeyResult" disabled="@(!CanCompute)">
+                        <i class="bi bi-calculator me-1"></i> Compute Result
+                    </button>
+                </div>
+
+                <div class="row g-2 align-items-center">
+                    <div class="col-sm-3">
+                        <label class="col-form-label col-form-label-sm fw-bold" for="shortKeyAuthOutput">Authentication Value:</label>
+                    </div>
+                    <div class="col-sm-9">
+                        <input id="shortKeyAuthOutput" type="text"
+                               class="form-control form-control-sm font-monospace"
+                               readonly value="@_shortKeyAuthenticationValue" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
